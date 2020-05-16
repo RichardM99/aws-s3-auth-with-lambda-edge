@@ -1,0 +1,16 @@
+{
+  "name": "aws-sam-example__lambda",
+  "version": "1.0.0",
+  "description": "A Cloud Formation Stack for Authenticating Requests to an S3 bucket",
+  "main": "index.js",
+  "repository": "",
+  "author": "Richard Moran",
+  "license": "",
+  "dependencies": {
+    "http-status-codes": "^1.3.2"
+  },
+  "scripts": {
+    "postpack": "tarball=$(npm list --depth 0 | sed 's/@/-/g; s/ .*/.tgz/g; 1q;'); tar -tf $tarball | sed 's/^package\\///' | zip -@r package; rm $tarball"
+  },
+  "devDependencies": {}
+}
