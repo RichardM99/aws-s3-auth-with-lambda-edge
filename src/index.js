@@ -3,7 +3,7 @@
  * the value provided in the Authorization header
  */
 function hasAccessCheck(accessKey) {
-    if (accessKey === "YOUR_SECRET_ACCESS_KEY") {
+    if (accessKey === "SECRET_ACCESS_KEY") {
         return Promise.resolve(true);
     }
     return Promise.resolve(false);

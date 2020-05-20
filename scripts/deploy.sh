@@ -2,6 +2,7 @@
 
 REGION="us-east-1"
 STAGE=$1
+BUCKET=$2
 
 # cloud formation builds need a bucket in their region
 #
@@ -9,7 +10,7 @@ S3_BUILD_BUCKET="my-cfn-builds-${REGION}"
 
 TEMPLATE_FILE_PATH="./template.yaml"
 GENERATED_TEMPLATE_FILE_PATH="./gen/template.yaml"
-STACK_NAME="my-cloud-front-bucket-authenticator-${STAGE}"
+STACK_NAME="my-cloud-front-with-auth-${STAGE}"
 
 # create a bucket for our cloud formation packages if it does not exist
 #
@@ -42,5 +43,5 @@ aws cloudformation deploy \
     --region $REGION \
     --template-file $GENERATED_TEMPLATE_FILE_PATH \
     --stack-name $STACK_NAME \
-    --parameter-overrides Stage=$STAGE \
+    --parameter-overrides Stage=$STAGE Bucket=$BUCKET \
     --capabilities CAPABILITY_IAM

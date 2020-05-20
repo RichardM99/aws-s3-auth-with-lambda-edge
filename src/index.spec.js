@@ -140,7 +140,7 @@ function setValidHeaders() {
         authorization: [
             {
                 key: "Authorization",
-                value: "YOUR_SECRET_ACCESS_KEY"
+                value: "SECRET_ACCESS_KEY"
             }
         ]
     });
