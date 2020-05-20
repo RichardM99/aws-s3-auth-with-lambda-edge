@@ -39,7 +39,7 @@ distribution (found in the general tab of your cloud front distribution in your 
 to the resource, first without adding the authorization header e.g.
 
 ```
-GET {your-cloud-front-domain-name}/name-of-your-file.foo
+GET {your-cloud-front-domain-name}/{name-of-your-file}.{ext}
 ```
 
 * You should get back "Unauthorized"
