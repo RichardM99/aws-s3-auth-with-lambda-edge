@@ -1,7 +1,7 @@
 {
-    "name": "aws-sam-example",
+    "name": "aws-s3-auth-with-lambda-edge",
     "version": "1.0.0",
-    "description": "A Cloud Formation Stack for Authenticating Requests to an S3 bucket",
+    "description": "Authenticate requests to an S3 bucket with Lambda@Edge & CloudFront",
     "main": "index.js",
     "repository": "",
     "author": "Richard Moran",
