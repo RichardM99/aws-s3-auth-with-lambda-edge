@@ -30,6 +30,7 @@ rm ./src/src.zip
 
 echo "Package code and dependencies"
 # start a sub-shell to execute npm run command in specified folder
+#
 ( cd ./src && npm install && zip -r src.zip . )
 
 echo "Upload content for '${TEMPLATE_FILE_PATH}' to '${S3_BUILD_BUCKET}'"
