@@ -15,6 +15,7 @@ correct [IAM Permissions](https://aws.amazon.com/iam/).
 * Node & npm.
 
 ### Getting Started
+**Note** - This will create and deploy your stack to AWS region **us-east-1 (N.Virgina)**.
 * Clone this repo & cd into the root directory.
 * run `npm install`.
 * Create and deploy your stack with the following command
@@ -43,7 +44,7 @@ GET {your-cloud-front-domain-name}/{name-of-your-file}.{ext}
 ```
 
 * You should get back "Unauthorized".
-* Now make the same request with header.
+* Now make the same request with header
 
 ```
 Authorization: SECRET_ACCESS_KEY
